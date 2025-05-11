@@ -188,7 +188,7 @@ function Hero() {
               transition={{ duration: 0.8, delay: 0.2 }} 
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight tracking-tight"
             >
-              Your caring <span className="neon-green">Business Partner</span><br/>
+              Your trusted <span className="neon-green">Business Partner</span><br/>
               for <span className="neon-cyan">Digital Solutions</span>
             </motion.h1>
             
