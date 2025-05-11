@@ -101,7 +101,7 @@ function Header() {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'glass-effect py-3' : 'py-6'}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'bg-[#0d0d0d] py-3' : 'py-6'}`}>
       <div className="max-w-[1440px] mx-auto flex items-center justify-between px-6 lg:px-12">
         <motion.div 
           className="flex items-center" 
@@ -109,7 +109,7 @@ function Header() {
           animate={{ opacity: 1 }} 
           transition={{ duration: 0.6 }}
         >
-          <img src={logoBizztrack} alt="Bizztrack" className="h-10 w-auto" />
+          <img src={logoBizztrack} alt="Bizztrack" className="h-14 w-auto" />
         </motion.div>
         
         <nav className="hidden md:flex items-center space-x-10">
@@ -215,23 +215,6 @@ function Hero() {
             >
               Get in Touch
             </a>
-          </motion.div>
-          
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }} 
-            animate={{ opacity: 1, y: 0 }} 
-            transition={{ duration: 0.8, delay: 0.8 }} 
-            className="flex flex-wrap justify-center gap-6 md:gap-8"
-          >
-            <div className="flex flex-col items-center">
-              <p className="text-white/40 text-sm mb-3">Trusted by Companies</p>
-              <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-                <div className="w-24 h-10 glass-effect rounded-lg flex items-center justify-center text-white/70 text-sm">Partner 1</div>
-                <div className="w-24 h-10 glass-effect rounded-lg flex items-center justify-center text-white/70 text-sm">Partner 2</div>
-                <div className="w-24 h-10 glass-effect rounded-lg flex items-center justify-center text-white/70 text-sm">Partner 3</div>
-                <div className="w-24 h-10 glass-effect rounded-lg flex items-center justify-center text-white/70 text-sm">Partner 4</div>
-              </div>
-            </div>
           </motion.div>
         </div>
       </div>
