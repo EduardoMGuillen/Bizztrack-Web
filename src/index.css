@@ -1,0 +1,65 @@
+/* Using Google Fonts loaded in index.html */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .neon-green {
+    color: var(--neon-green);
+    text-shadow: 0 0 8px rgba(144, 244, 107, 0.3);
+  }
+  
+  .neon-cyan {
+    color: var(--neon-cyan);
+    text-shadow: 0 0 8px rgba(104, 211, 232, 0.3);
+  }
+  
+  .neon-violet {
+    color: var(--neon-violet);
+    text-shadow: 0 0 8px rgba(172, 130, 246, 0.3);
+  }
+
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#68d3e8] to-[#ac82f6];
+  }
+  
+  .animate-delay-1 {
+    animation-delay: 0.1s;
+  }
+  
+  .animate-delay-2 {
+    animation-delay: 0.2s;
+  }
+  
+  .animate-delay-3 {
+    animation-delay: 0.3s;
+  }
+}
+
+.section-padding {
+  @apply py-16 md:py-24 px-4;
+}
+
+.bg-neon-gradient {
+  background: linear-gradient(120deg, #0d0d0d 0%, #181830 50%, #68d3e8 100%);
+}
+
+.glow {
+  box-shadow: 0 0 16px 2px #90f46b66, 0 0 32px 4px #68d3e866;
+}
